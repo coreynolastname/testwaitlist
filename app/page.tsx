@@ -5,7 +5,7 @@ import { StaraBold, StaraMedium } from './layout';
 
 export default function Home() {
   return (
-    <main>
+    <main className={StaraBold.className}>
       <Navbar/>
     </main>
   );
