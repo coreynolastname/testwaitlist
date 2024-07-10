@@ -18,7 +18,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/utils/*": ["./utils/*"],
+      "@/*": ["./src/*"],  // Adjust if your source code is in a different folder
+      "@/lib/*": ["./lib/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
