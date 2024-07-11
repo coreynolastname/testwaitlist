@@ -1,18 +1,7 @@
 // app/layout.tsx
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
 import { BackgroundGradientAnimation } from './components/ui/background-gradient-animation';
 import './styles/globals.css';
-
-export const StaraBold = localFont({
-  src: '../public/fonts/Stara-Bold-BF65962709c55b4.otf', 
-  variable: '--font-stara-bold',
-});
-
-export const StaraMedium = localFont({
-  src: '../public/fonts/Stara-Medium-BF65962709d948a.otf',
-  variable: '--font-stara-medium',
-});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
