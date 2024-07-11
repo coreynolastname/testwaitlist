@@ -16,10 +16,10 @@ export default function Navbar() {
       </div>
       <ul className="flex justify-end items-center h-full pr-10"> {/* Style using Tailwind */}
         <li className="mr-8">
-          <Link href="/sell" className="text-white hover:text-gray-300">Sell</Link>
+          <Link href="/sell" className="text-white hover:text-gray-300 font-stara font-bold">Sell</Link>
         </li>
         <li>
-          <Link href="/investors" className="text-white hover:text-gray-300">Investors</Link>
+          <Link href="/investors" className="text-white hover:text-gray-300 font-stara font-medium">Investors</Link>
         </li>
       </ul>
     </nav>

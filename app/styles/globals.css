@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Stara';
+  src: url('/fonts/Stara-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stara';
+  src: url('/fonts/Stara-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -26,6 +40,7 @@ body {
     rgb(var(--background-start-rgb));
   overflow-x: hidden;
   overflow-y: hidden;
+  font-family: 'Stara', sans-serif;
 }
 
 @layer utilities {
