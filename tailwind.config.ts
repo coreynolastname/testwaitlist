@@ -40,6 +40,11 @@ const config: Config = {
       fontFamily: {
         stara: ['Stara', 'sans-serif'],
       },
+
+      colors: {
+        bundlpurple: '#9381FF',
+      },
+
     },
   },
   plugins: [],
