@@ -36,6 +36,7 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'waitlistcon': 'linear-gradient(154deg, #8A15D2 3%, #644CF3 32%, #4830D1 61%, #8328AE 100%)',
       },
       fontFamily: {
         stara: ['Stara', 'sans-serif'],
