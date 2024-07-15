@@ -1,0 +1,35 @@
+/* waitlistform.css */
+.waitlist-form {
+    position: absolute;
+    height: 70px;
+    width:92%;
+    bottom: 29px;
+    margin-left: 15.6px;
+    margin-right: 7px;
+    background-color: rgba(255, 255, 255, 0.08); /* Background color with alpha */
+    backdrop-filter: blur(10px);                 /* Add a backdrop blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* White border with alpha */
+    border-radius: 0.5rem;                       /* Add rounded corners */
+    padding-top: 10px;    
+    padding-left: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);     /* Add a subtle shadow */
+  }
+  
+  .waitlist-form input[type="tel"] {
+    width: 59.3%;                 /* Make the input field take the full width */
+    padding: 0.75rem;            /* Add padding to the input field */
+    background-color: transparent; /* Make the input field transparent */  
+    color: white;               /* Set the text color to white */
+  }
+  
+  .waitlist-form button[type="submit"] {
+    margin-left: 4px;
+    background: linear-gradient(180deg,#836dff 0%, #6347ff 100%);/* Set the button background color to black */
+    color: white;               /* Set the button text color to white */
+    padding: 0.75rem 1rem;       /* Add padding to the button */
+    border: none;                /* Remove default border */
+    border-radius: 0.25rem;       /* Add rounded corners to the button */
+    cursor: pointer;             /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  

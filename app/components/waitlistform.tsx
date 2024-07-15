@@ -1,5 +1,7 @@
 "use client";
 
+import '../styles/waitlistform.css' // Add this import statement 
+
 import { useState } from 'react';
 
 export default function Waitlistform() {
@@ -31,7 +33,7 @@ export default function Waitlistform() {
   };
 
   return (
-    <div className="relative z-10"> 
+    <div className="waitlist-form"> 
       <form onSubmit={handleSubmit}>
         <input
           type="tel"
