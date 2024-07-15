@@ -33,6 +33,7 @@ const config: Config = {
         },
 
       },
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
@@ -44,9 +45,11 @@ const config: Config = {
 
       colors: {
         bundlpurple: '#9381FF',
+        indigospecial:'#1D0B3E',
       },
 
     },
+    
   },
   plugins: [],
 };

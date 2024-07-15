@@ -4,6 +4,13 @@
 
 @font-face {
   font-family: 'Stara';
+  src: url('/fonts/Stara-ExtraBold.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stara';
   src: url('/fonts/Stara-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
