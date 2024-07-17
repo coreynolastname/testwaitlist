@@ -3,7 +3,7 @@
     position: absolute;
     height: 70px;
     width:92%;
-    bottom: 29px;
+    bottom: 40px;
     margin-left: 15.6px;
     margin-right: 7px;
     background-color: rgba(255, 255, 255, 0.08); /* Background color with alpha */
@@ -24,7 +24,7 @@
   
   .waitlist-form button[type="submit"] {
     margin-left: 4px;
-    background: linear-gradient(180deg,#836dff 0%, #6347ff 100%);/* Set the button background color to black */
+    background: rgb(119, 53, 250);/* Set the button background color to black */
     color: white;               /* Set the button text color to white */
     padding: 0.75rem 1rem;       /* Add padding to the button */
     border: none;                /* Remove default border */
