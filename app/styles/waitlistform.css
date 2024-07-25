@@ -24,7 +24,7 @@
   
   .waitlist-form button[type="submit"] {
     margin-left: 4px;
-    background: rgb(119, 53, 250);/* Set the button background color to black */
+    background: rgb(88, 37, 191);/* Set the button background color to black */
     color: white;               /* Set the button text color to white */
     padding: 0.75rem 1rem;       /* Add padding to the button */
     border: none;                /* Remove default border */
