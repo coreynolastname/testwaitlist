@@ -1,13 +1,12 @@
-import Image from "next/image";
 import React from 'react';
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 
-export default function investors() {
+export default function Investors() {
   return (
     <main>
       <Navbar/>
-      Investors
+      We don't want investors lol
       <Footer/>
     </main>
   );

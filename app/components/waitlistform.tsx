@@ -1,50 +1,27 @@
-"use client";
+import '../styles/waitlistform.css'
+import { redirect } from "next/navigation";
 
-import '../styles/waitlistform.css' // Add this import statement 
-
-import { useState } from 'react';
+async function create(data:FormData) {
+  "use server"
+  const formData = {
+      phone: data.get("phone")!.toString(), //exclamation means non nullable
+  }
+  await prisma.waitlist.create({data:formData})
+  redirect("/investors")
+}
 
 export default function Waitlistform() {
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [message, setMessage] = useState('');
-
-  const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault(); // Prevent default form submission
-
-    try {
-      const response = await fetch('/api/waitlist', { // Adjust API endpoint
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ phoneNumber }),
-      });
-
-      if (response.ok) {
-        setMessage('Thank you for joining the waitlist!');
-        setPhoneNumber(''); // Clear the input field
-      } else {
-        setMessage('There was an error. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      setMessage('There was an error. Please try again.');
-    }
-  };
-
   return (
     <div className="waitlist-form"> 
-      <form onSubmit={handleSubmit}>
+      <form action={create}>
         <input
           type="tel"
+          name="phone" 
+          id="phone"
           placeholder="Phone Number"
-          value={phoneNumber}
-          onChange={(e) => setPhoneNumber(e.target.value)}
           required
         />
         <button type="submit">Join Waitlist</button>
-
-        {message && <p className="message">{message}</p>} 
       </form>
     </div>
   );
